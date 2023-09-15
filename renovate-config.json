@@ -1,0 +1,17 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": "Default sane automerge config for all repositories in this org",
+    "extends": [
+        "config:recommended",
+        ":dependencyDashboard",
+        ":enableVulnerabilityAlerts",
+        "schedule:daily",
+        ":automergeMinor",
+        ":automergeBranch",
+        ":automergeRequireAllStatusChecks",
+        "docker:enableMajor",
+        ":enablePreCommit",
+        ":labels(pr-deps)"
+    ],
+    "autoApprove": true
+}
