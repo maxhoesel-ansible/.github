@@ -13,5 +13,16 @@
         ":enablePreCommit",
         ":labels(pr-deps)"
     ],
-    "autoApprove": true
+    "autoApprove": true,
+    "packageRules": [
+        {
+            "matchPackageNames": [
+                "tox"
+            ],
+            "matchManagers": [
+                "pip_requirements"
+            ],
+            "allowedVersions": "<4.0.0"
+        }
+    ]
 }
