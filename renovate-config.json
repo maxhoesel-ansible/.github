@@ -14,15 +14,9 @@
         ":labels(pr-deps)"
     ],
     "autoApprove": true,
-    "packageRules": [
-        {
-            "matchPackageNames": [
-                "tox"
-            ],
-            "matchManagers": [
-                "pip_requirements"
-            ],
-            "allowedVersions": "<4.0.0"
-        }
-    ]
+    "ansible-galaxy": {
+        "fileMatch": [
+            "(^|/)(galaxy|requirements)(\.ansible|\.molecule)?\.ya?ml$"
+        ]
+    }
 }
