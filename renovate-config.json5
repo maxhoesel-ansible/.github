@@ -14,6 +14,7 @@
         ":labels(pr-deps)"
     ],
     "autoApprove": true,
+    "minimumReleaseAge": "4 days",
     "ansible-galaxy": {
         "fileMatch": [
             "(^|/)(galaxy|requirements)(\.ansible|\.molecule)?\.ya?ml$"
