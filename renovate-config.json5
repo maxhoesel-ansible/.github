@@ -19,7 +19,7 @@
         "fileMatch": [
             "(^|/)(galaxy|requirements)(\.ansible|\.molecule)?\.ya?ml$"
         ]
-    }
+    },
     "packageRules": [
         {
             "description": "Don't upgrade ansible-core since its used for explicit compat testing",
